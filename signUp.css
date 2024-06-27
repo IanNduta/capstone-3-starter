@@ -8,6 +8,10 @@
     background-color: #CFE2AB;
     
 }
+#boderp{
+    border-left: 1px solid black;
+    height: 400px;
+}
 
 /* #innerbody{
     background-color: #9C9C9C;
