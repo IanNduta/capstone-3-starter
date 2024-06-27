@@ -25,6 +25,8 @@ function onClickedSubmitBtn() {
     
     createPostForUser();
     clearPostTextBox();
+
+    alert="hi";
 }
 
 function getLogingUserData() {
