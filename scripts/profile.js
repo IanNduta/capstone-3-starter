@@ -18,11 +18,9 @@ window.onload = function () {
     clearBtn.onclick = () => {
         clearPostTextBox();
     }
-
 }
 
 function onClickedSubmitBtn() {
-    
     createPostForUser();
     clearPostTextBox();
 
@@ -52,6 +50,10 @@ function getLogingUserData() {
             userFullName.innerHTML = "User Full name: " + data.fullName;
             accountCreated.innerHTML = data.createdAt;
             acountUpdated.innerHTML = data.acountUpdated;
+
+            if(data.acountUpdated == undefined){
+                acountUpdated.innerHTML = "Account hasn't been updated";
+            }
 
         })
 
