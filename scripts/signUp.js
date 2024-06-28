@@ -11,6 +11,7 @@ const submitBtn = document.getElementById("submitBtn");
 window.onload = function () {
     console.log("it works");
     submitBtn.onclick = onClickedSubmitBtn;
+    // getUserPreviousPost();
 }
 
 function onClickedSubmitBtn() {
@@ -39,3 +40,23 @@ function onClickedSubmitBtn() {
     })
 
 }
+
+// function getUserPreviousPost(){
+//     let token = getLoginData();
+//     let userDataName = token.username;
+//     // console.log(userDataName);
+
+//     const loginToken = getLoginData();
+//     const options = {
+//         method: "GET",
+//         headers: {
+//             Authorization: `Bearer ${loginToken.token}`,
+//         },
+//     };
+
+//     fetch("http://microbloglite.us-east-2.elasticbeanstalk.com/api/posts?" + userDataName, options)
+//     .then(response => response.json)
+//     .then(data => {
+//         console.log(data);
+//     })
+// }

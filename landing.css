@@ -40,6 +40,14 @@ body{
     font-size: 16px;
 }
 
+.headerFooter{
+    background-color: #40e0d0 !important;
+    /* background-image: linear-gradient(#848687b5,#424546b5,#020202); */
+  }
+  .headerstuff{
+    background-color: 	#eeeeee;
+  }
+
 @media only screen and (max-width: 768px){
     .box{
         marign: 0 10px;

@@ -19,7 +19,13 @@
   .headerstuff{
     background-color: #f8f9fa;
   }
+#border-color{
+    background-color: 	#40e0d0;
+}
 
+#innerBorder{
+    background-color: white;
+}
 /* #innerbody{
     background-color: #9C9C9C;
 } */

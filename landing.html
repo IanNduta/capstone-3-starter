@@ -31,21 +31,31 @@
 <body>
 
     <header>
-        <h1>Welcome to <code>YOUR MICROBLOG NETWORK</code></h1>
+        <div class="row p-5 text-center headerFooter">
+            <div class="mb-5">
+                <hr>
+            </div>
+            <div class="col p-5  ms-5 headerstuff">
+                <h1>Welcome to <code>YOUR MICROBLOG NETWORK</code></h1>
+                <small>Empowering Minds, Shaping Futures</small>
+            </div>
+        </div>
     </header>
+    <!-- d-flex justify-content-center -->
 
-    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="container  align-items-center min-vh-100">
 
         <!-- loging container -->
-        <div class="row border rounder-5 p-3 bg-white shadow box-area">
+        <div class="row border mt-5 rounder-5 p-3 bg-white shadow box-area">
 
 
             <!-- left box -->
-            <div id="leftbox" class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box">
+            <div id="leftbox"
+                class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column left-box">
                 <div class="featured-image mb-3">
-                    <img id="imageStyle" src="images/stockImage2.jpg" alt="image"class="img-fluid">
+                    <img id="imageStyle" src="images/welcome.jpg" alt="image" class="img-fluid">
                 </div>
-                <p id="p-style" class="text-white fs-2">hi my name is ian</p>
+                <p id="p-style" class="text-white fs-2 text-center">Welcome to Waves of Influence</p>
                 <small id="small-tag-style" class="text-white text-wrap text-center">Login in now and join the
                     conversaion</small>
             </div>
@@ -78,7 +88,8 @@
                         <div class="input-group mb-5 d-flex justify-content-between">
                             <div class="form-check">
                                 <input type="checkbox" class="form-check-input" id="formcheck">
-                                <label for="formcheck" class="form-check-label text-secondary"><small>Remember Me</small></label>
+                                <label for="formcheck" class="form-check-label text-secondary"><small>Remember
+                                        Me</small></label>
                             </div>
                             <div class="forgot">
                                 <small><a href="signUp.html">Don't have an account?</a></small>
@@ -90,8 +101,10 @@
                         </div>
 
                         <div class="input-group mb-3">
-                            <button id="google" type="submit" class="btn btn-lg-light w-100 fs-6"><img id="img-style" src="images/google3.png" alt="google logo" class="me-2"><small>Sign In with google</small>  </button>
-                        </div> 
+                            <button id="google" type="submit" class="btn btn-lg-light w-100 fs-6"><img id="img-style"
+                                    src="images/google3.png" alt="google logo" class="me-2"><small>Sign In with
+                                    google</small> </button>
+                        </div>
                     </form>
 
                 </div>
@@ -104,7 +117,40 @@
 
     </main>
 
-    <footer></footer>
+    <footer class="footer p-5 mt-3 headerFooter">
+        <div class="row">
+            <div class="col about ">
+                <h2 class="roboto-regular">Waves of Influence</h2>
+                <p>Exploring the currents shaping our world</p>
+            </div>
+
+
+            <div class="col">
+                <h3 class="roboto-regular">About Us:</h3>
+                <p>Waves of Influence is a platform dedicated to examining the forces and trends that shape our society,
+                    culture, and global landscape. Our mission is to provide insightful analysis, thought-provoking
+                    commentary, and a forum for diverse perspectives.</p>
+            </div>
+
+            <div class="col connect">
+                <h3 class="roboto-regular">Connect with Us:</h3>
+                <p><strong>Email:</strong> <a href="mailto:info@wavesofinfluence.com">info@wavesofinfluence.com</a></p>
+                <div class="social-links">
+                    <a href="https://twitter.com/WavesInfluence">Twitter</a> |
+                    <a href="https://facebook.com/WavesOfInfluence">Facebook</a> |
+                    <a href="https://instagram.com/wavesofinfluence">Instagram</a>
+                </div>
+            </div>
+
+            <div class="col subscribe">
+                <h3 class="roboto-regular">Subscribe to Our Newsletter:</h3>
+                <p>Stay updated with the latest articles, news, and special offers. <a href="#">Subscribe Here</a></p>
+            </div>
+            <div class="col legal">
+                <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a> | <a href="#">Contact Us</a></p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Page-specific code -->
     <script src="./landing.js"></script>
