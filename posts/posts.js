@@ -52,11 +52,11 @@ function getAllUsersPost(){
 
 function createCardsOfUserPosts(userData){
     let colDiv = document.createElement("div");
-    colDiv.classList.add("col-3", "text-center");
+    colDiv.classList.add("col-12", "p-5","shadow","mt-5", "text-center");
     
 
     let cardDiv = document.createElement("div");
-    cardDiv.classList.add("card", "mt-5", "mb-5");
+    cardDiv.classList.add("card", "mt-5", "mb-5", "p-5");
 
     let divHeader = document.createElement("div");
     divHeader.classList.add("card-header");
@@ -64,7 +64,7 @@ function createCardsOfUserPosts(userData){
     cardDiv.appendChild(divHeader);
 
     let cardBodyDiv = document.createElement("div");
-    cardBodyDiv.classList.add("card-body");
+    cardBodyDiv.classList.add("card-body", "p-5");
     cardDiv.appendChild(cardBodyDiv);
 
     let h5 = document.createElement("h5");
@@ -77,10 +77,6 @@ function createCardsOfUserPosts(userData){
     p.innerHTML = userData.text;
     cardBodyDiv.appendChild(p);
 
-    let a = document.createElement("a");
-    a.classList.add("btn", "btn-primary")
-    a.innerHTML = "Go somwewhere";
-    cardBodyDiv.appendChild(a);
 
     const cardOutPut = document.getElementById("cardOutPut");
     colDiv.appendChild(cardDiv);

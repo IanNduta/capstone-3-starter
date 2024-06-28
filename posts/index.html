@@ -31,7 +31,7 @@
 <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container">
                 <a class="navbar-brand" href="#">Navbar</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -64,13 +64,19 @@
                     </ul>
                 </div>
             </div>
-        </nav>
-        <h1 id="title">POSTS PAGE</h1>
+        </nav> -->
+
+            <div class="row headerFooter">
+                <div class="col text-center">
+                    <h1 id="title">POSTS PAGE</h1>
+                    <div class="d-flex justify-content-end">
+                        <button id="submitBtn" type="button" class="btn btn-primary">Profile Page</button>
+                    </div>
+                </div>
+            </div>
     </header>
 
     <main>
-        <button id="submitBtn" type="button" class="btn btn-primary">logout</button>
-
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -85,7 +91,9 @@
         </div>
     </main>
 
-    <footer></footer>
+    <footer class="headerFooter">
+
+    </footer>
 
     <!-- Page-specific code -->
     <script src="./posts.js"></script>
